@@ -13,16 +13,15 @@ import (
 func main() {
 	var dogeSchema, dogeHost, dogePort, dogeUser, dogePassword, databaseURL, migrationsPath, rpcServerHost, rpcServerPort string
 
-	flags := flag.NewFlagSet("balance-master", flag.ExitOnError)
-	flags.StringVar(&dogeSchema, "doge-schema", "http", "Dogecoin schema")
-	flags.StringVar(&dogeHost, "doge-host", "localhost", "Dogecoin host")
-	flags.StringVar(&dogePort, "doge-port", "22556", "Dogecoin port")
-	flags.StringVar(&dogeUser, "doge-user", "test", "Dogecoin user")
-	flags.StringVar(&dogePassword, "doge-password", "test", "Dogecoin password")
-	flags.StringVar(&databaseURL, "database-url", "sqlite://balance-master.db", "Database URL")
-	flags.StringVar(&migrationsPath, "migrations-path", "file://../db/migrations", "Migrations path")
-	flags.StringVar(&rpcServerHost, "rpc-server-host", "localhost", "RPC server host")
-	flags.StringVar(&rpcServerPort, "rpc-server-port", "8899", "RPC server port")
+	flag.StringVar(&dogeSchema, "doge-schema", "http", "Dogecoin schema")
+	flag.StringVar(&dogeHost, "doge-host", "localhost", "Dogecoin host")
+	flag.StringVar(&dogePort, "doge-port", "22556", "Dogecoin port")
+	flag.StringVar(&dogeUser, "doge-user", "test", "Dogecoin user")
+	flag.StringVar(&dogePassword, "doge-password", "test", "Dogecoin password")
+	flag.StringVar(&databaseURL, "database-url", "sqlite://balance-master.db", "Database URL")
+	flag.StringVar(&migrationsPath, "migrations-path", "db/migrations", "Migrations Path")
+	flag.StringVar(&rpcServerHost, "rpc-server-host", "localhost", "RPC server host")
+	flag.StringVar(&rpcServerPort, "rpc-server-port", "8899", "RPC server port")
 
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGTERM)
