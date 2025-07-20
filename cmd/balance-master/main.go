@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	balance_master "dogecoin.org/balance-master/pkg/balance-master"
-	bmcfg "dogecoin.org/balance-master/pkg/config"
+	balance_master "github.com/dogecoinfoundation/balance-master/pkg/balance-master"
+	bmcfg "github.com/dogecoinfoundation/balance-master/pkg/config"
 )
 
 func main() {

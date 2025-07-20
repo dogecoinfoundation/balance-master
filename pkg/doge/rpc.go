@@ -9,7 +9,7 @@ import (
 	"net/rpc"
 	"sync/atomic"
 
-	"dogecoin.org/balance-master/pkg/config"
+	"github.com/dogecoinfoundation/balance-master/pkg/config"
 )
 
 type rpcRequest struct {

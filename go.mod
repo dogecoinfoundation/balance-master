@@ -1,4 +1,4 @@
-module dogecoin.org/balance-master
+module github.com/dogecoinfoundation/balance-master
 
 go 1.24.2
 

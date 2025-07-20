@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"dogecoin.org/balance-master/pkg/store"
+	"github.com/dogecoinfoundation/balance-master/pkg/store"
 )
 
 type TrackerRoutes struct {

@@ -3,9 +3,9 @@ package balance_master
 import (
 	"log"
 
-	bmcfg "dogecoin.org/balance-master/pkg/config"
-	bmrpc "dogecoin.org/balance-master/pkg/rpc"
-	"dogecoin.org/balance-master/pkg/store"
+	bmcfg "github.com/dogecoinfoundation/balance-master/pkg/config"
+	bmrpc "github.com/dogecoinfoundation/balance-master/pkg/rpc"
+	"github.com/dogecoinfoundation/balance-master/pkg/store"
 	"github.com/dogecoinfoundation/chainfollower/pkg/chainfollower"
 	cfcfg "github.com/dogecoinfoundation/chainfollower/pkg/config"
 	"github.com/dogecoinfoundation/chainfollower/pkg/messages"

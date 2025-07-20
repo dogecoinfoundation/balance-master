@@ -3,7 +3,7 @@ package rpc
 import (
 	"net/http"
 
-	"dogecoin.org/balance-master/pkg/store"
+	"github.com/dogecoinfoundation/balance-master/pkg/store"
 )
 
 type UtxoRoutes struct {

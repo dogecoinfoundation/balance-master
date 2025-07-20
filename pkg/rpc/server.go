@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"time"
 
-	"dogecoin.org/balance-master/pkg/config"
-	"dogecoin.org/balance-master/pkg/store"
+	"github.com/dogecoinfoundation/balance-master/pkg/config"
+	"github.com/dogecoinfoundation/balance-master/pkg/store"
 )
 
 type RpcServer struct {

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"dogecoin.org/balance-master/pkg/rpc"
-	"dogecoin.org/balance-master/pkg/store"
+	"github.com/dogecoinfoundation/balance-master/pkg/rpc"
+	"github.com/dogecoinfoundation/balance-master/pkg/store"
 )
 
 type BalanceMasterClientConfig struct {
