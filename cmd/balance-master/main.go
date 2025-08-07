@@ -14,7 +14,7 @@ func main() {
 	var dogeSchema, dogeHost, dogePort, dogeUser, dogePassword, databaseURL, migrationsPath, rpcServerHost, rpcServerPort string
 
 	flag.StringVar(&dogeSchema, "doge-schema", "http", "Dogecoin schema")
-	flag.StringVar(&dogeHost, "doge-host", "dogecoin", "Dogecoin host")
+	flag.StringVar(&dogeHost, "doge-host", "localhost", "Dogecoin host")
 	flag.StringVar(&dogePort, "doge-port", "22556", "Dogecoin port")
 	flag.StringVar(&dogeUser, "doge-user", "test", "Dogecoin user")
 	flag.StringVar(&dogePassword, "doge-password", "test", "Dogecoin password")
@@ -22,6 +22,8 @@ func main() {
 	flag.StringVar(&migrationsPath, "migrations-path", "db/migrations", "Migrations Path")
 	flag.StringVar(&rpcServerHost, "rpc-server-host", "localhost", "RPC server host")
 	flag.StringVar(&rpcServerPort, "rpc-server-port", "8899", "RPC server port")
+
+	flag.Parse()
 
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGTERM)
